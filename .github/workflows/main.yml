@@ -1,0 +1,16 @@
+name: CHeck
+on:
+    push: 
+        branches:
+            main
+env:
+    new: ""
+jobs:
+    one:
+        name: check1
+        runs-on: ubuntu-latest
+        steps:
+            - name: Initial
+              run: |
+                echo "new=yes" >> $GITHUB_ENV
+                echo "$new"
