@@ -14,3 +14,6 @@ jobs:
               run: |
                 echo "new=yes" >> $GITHUB_ENV
                 echo "$new"
+            - name: Access New Variable
+              run: |
+                 echo "The value of new is: ${{ env.new }}"
