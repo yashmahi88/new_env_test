@@ -13,8 +13,8 @@ jobs:
             - name: Initial
               run: |
                 echo "new=yes"
-                echo "new=$new" >> $GITHUB_ENV
-                echo "$new"
+                echo "new1=$new" >> $GITHUB_ENV
+                echo "$new1"
             - name: Access New Variable
               run: |
                  echo "The value of new is: ${{ env.new }}"
