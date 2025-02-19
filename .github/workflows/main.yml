@@ -12,7 +12,8 @@ jobs:
         steps:
             - name: Initial
               run: |
-                echo "new=yes" >> $GITHUB_ENV
+                echo "new=yes"
+                echo "new=$new" >> $GITHUB_ENV
                 echo "$new"
             - name: Access New Variable
               run: |
