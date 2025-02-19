@@ -2,7 +2,7 @@ name: CHeck
 on:
     push: 
         branches:
-            main
+            master
 env:
     new: ""
 jobs:
